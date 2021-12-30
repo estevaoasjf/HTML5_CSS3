@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em varios dispositivos diferente ou modifique o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width:650px )" srcset="imagens\paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width:950px )" srcset="imagens\paisagem-600.jpg" type="image/jpg">
+        <source media="(max-width:1250px)" srcset="imagens\paisagem-900.jpg" type="image/jpg">
+        <source media="(max-width:1450px)" srcset="imagens\paisagem-1200.jpg" type="image/jpg">
+        <img src="imagens\paisagem-1500.jpg" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Reproduzindo um audio em HTML5</p>
+    <audio src="midia/X2Download.com - JESSÉ LUCAS __ DEUS TE ABENÇOE (CLIPE OFICIAL) (128 kbps).mp3" controls ></audio>
+    <p>Este é um outro método para tocar um audio</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/X2Download.com - JESSÉ LUCAS __ DEUS TE ABENÇOE (CLIPE OFICIAL) (128 kbps).mp3" type="audio/mpeg">
+        <source src="midia/X2Download.com - JESSÉ LUCAS __ DEUS TE ABENÇOE (CLIPE OFICIAL) (128 kbps).ogg" type="audio/ogg">
+        <source src="midia/X2Download.com - JESSÉ LUCAS __ DEUS TE ABENÇOE (CLIPE OFICIAL) (128 kbps).wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não suporta esse audio.<a href="midia/X2Download.com - JESSÉ LUCAS __ DEUS TE ABENÇOE (CLIPE OFICIAL) (128 kbps).mp3" target="_blank" rel="next">Clique aqui para baixar o arquivo</a></p>
+</body>
+</html>

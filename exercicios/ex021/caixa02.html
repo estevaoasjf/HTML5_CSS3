@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffb6c1;
+        }
+        
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px ;
+        }
+
+        header > h1{
+            color: violet;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2em;
+            text-align: center;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+        }
+
+        header > nav{
+            background-color: violet;
+            padding: 3px;
+            box-shadow: 4px 5px 6px 1px rgba(5, 5, 5, 0.5);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 5px 9px 1px rgba(0, 0, 0, 0.438)
+        }
+
+        section#assuntos{
+            background-color: thistle;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        article{
+            background-color: thistle;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: #ffb6c1;
+        }
+
+        footer{
+            background-color: darkgrey;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte | Politica | Tecnologias</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore explicabo dicta hic quas! Dolor, distinctio. Ea ipsam, et fuga nisi explicabo laborum odio fugiat, ex facere quam distinctio doloremque quis.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum aliquam adipisci voluptates, nesciunt praesentium laborum tenetur eaque veritatis mollitia voluptatum sapiente maiores? Accusantium omnis aperiam iste suscipit. Ex, veniam.</p>
+                <aside>
+                    <p>Artigo escrito por João Pedro</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Estevão Santos</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
